@@ -28,3 +28,23 @@ Fri Apr 22 15:34:40 UTC 2022:
  tests:  6|6
 total_score: 5/70
 bae2e52
+Fri Apr 22 15:47:23 UTC 2022: 
+ treemap.c | 9 +++++++++
+ 1 file changed, 9 insertions(+)
+test.c: In function ‘searchTreeMap’:
+test.c:503:5: error: ‘main’ is normally a non-static function [-Werror=main]
+ int main( int argc, char *argv[] ) {
+     ^~~~
+test.c:606:1: error: expected declaration or statement at end of input
+ }
+ ^
+test.c:606:1: error: control reaches end of non-void function [-Werror=return-type]
+ }
+ ^
+At top level:
+test.c:503:5: error: ‘main’ defined but not used [-Werror=unused-function]
+ int main( int argc, char *argv[] ) {
+     ^~~~
+cc1: all warnings being treated as errors
+Compilation failed
+aa26c79
