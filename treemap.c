@@ -83,8 +83,10 @@ Pair * searchTreeMap(TreeMap * tree, void* key) {
     else{ 
       aux= aux -> left;
     }
+    }
   return NULL;
 }
+  
 
 
 Pair * upperBound(TreeMap * tree, void* key) {
